@@ -65,7 +65,7 @@ const SpaceAudio = (function () {
 
   function startMusic() {
 
-    if(!bgMusic);
+    if(!bgMusic)
     bgMusic = new Audio("/assets/sound/backsound.mp3");
     bgMusic.loop = true;
     bgMusic.volume = 0.3;
@@ -94,8 +94,8 @@ const SpaceAudio = (function () {
   function setMuted(val) {
     muted = val;
     localStorage.setItem('sst_muted', val);
-    if (bgMusic) {
-        val ? bgMusic.pause() : bgMusic.play();}
+    if (val) {
+        stopMusic();}
     if (!val) {
         startMusic();}
   }
