@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Mengapa Mars dijuluki \"Planet Merah\"?",
+    "options": [
+      "Karena dekat Matahari",
+      "Karena banyak karat besi di tanahnya",
+      "Karena selalu terbakar",
+      "Karena punya cincin merah"
+    ],
+    "answer": 1,
+    "explanation": "Permukaan Mars berwarna kemerahan karena kandungan oksida besi (karat) di tanahnya."
+  },
+  {
+    "id": 2,
+    "question": "Berapa jumlah satelit alami Mars?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Mars memiliki dua satelit kecil bernama Phobos dan Deimos."
+  },
+  {
+    "id": 3,
+    "question": "Apa nama gunung tertinggi di Mars sekaligus di Tata Surya?",
+    "options": [
+      "Everest",
+      "Olympus Mons",
+      "Puncak Jaya",
+      "Kilimanjaro"
+    ],
+    "answer": 1,
+    "explanation": "Olympus Mons di Mars adalah gunung tertinggi yang diketahui di seluruh Tata Surya."
+  },
+  {
+    "id": 4,
+    "question": "Apa dugaan ilmuwan tentang Mars di masa lalu?",
+    "options": [
+      "Pernah memiliki air mengalir",
+      "Pernah menjadi bintang",
+      "Pernah memiliki cincin",
+      "Pernah lebih dekat ke Matahari"
+    ],
+    "answer": 0,
+    "explanation": "Banyak bukti menunjukkan Mars dulu mungkin memiliki air yang mengalir di permukaannya."
+  },
+  {
+    "id": 5,
+    "question": "Berapa lama satu hari di Mars?",
+    "options": [
+      "Sekitar 24 jam",
+      "Sekitar 24,6 jam",
+      "Sekitar 10 jam",
+      "Sekitar 48 jam"
+    ],
+    "answer": 1,
+    "explanation": "Satu hari di Mars hampir sama dengan Bumi, yaitu sekitar 24,6 jam."
+  },
+  {
+    "id": 6,
+    "question": "Berapa lama satu tahun di Mars (revolusi)?",
+    "options": [
+      "88 hari",
+      "225 hari",
+      "687 hari",
+      "365 hari"
+    ],
+    "answer": 2,
+    "explanation": "Mars membutuhkan waktu 687 hari Bumi untuk mengelilingi Matahari satu kali."
+  },
+  {
+    "id": 7,
+    "question": "Mars adalah planet urutan keberapa dari Matahari?",
+    "options": [
+      "Ketiga",
+      "Keempat",
+      "Kelima",
+      "Kedua"
+    ],
+    "answer": 1,
+    "explanation": "Mars berada di urutan keempat dari Matahari, setelah Bumi."
+  },
+  {
+    "id": 8,
+    "question": "Berapa jarak rata-rata Mars dari Matahari?",
+    "options": [
+      "150 juta km",
+      "228 juta km",
+      "778 juta km",
+      "108 juta km"
+    ],
+    "answer": 1,
+    "explanation": "Jarak rata-rata Mars dari Matahari adalah sekitar 228 juta km."
+  },
+  {
+    "id": 9,
+    "question": "Siapa nama kedua satelit Mars?",
+    "options": [
+      "Titan dan Europa",
+      "Phobos dan Deimos",
+      "Io dan Callisto",
+      "Ariel dan Miranda"
+    ],
+    "answer": 1,
+    "explanation": "Kedua satelit Mars bernama Phobos dan Deimos, keduanya berukuran kecil."
+  },
+  {
+    "id": 10,
+    "question": "Berapa perkiraan diameter Mars?",
+    "options": [
+      "4.879 km",
+      "6.779 km",
+      "12.742 km",
+      "139.820 km"
+    ],
+    "answer": 1,
+    "explanation": "Diameter Mars sekitar 6.779 km, lebih kecil dari Bumi."
+  }
+]

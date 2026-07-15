@@ -1,0 +1,62 @@
+body{
+  /* Ganti file di assets/background/space-bg.jpg dengan gambarmu sendiri.
+     Catatan: di halaman ini #simCanvas menutupi layar penuh, jadi background
+     yang benar-benar terlihat diatur lewat drawBackground() di js/simulation.js. */
+  background:
+    url('../assets/background/space-bg.jpg') center/cover no-repeat fixed,
+    #070a22;
+  min-height:100vh; overflow:hidden;
+}
+.page-header{
+  position:relative; z-index:5; text-align:center; padding:50px 20px 10px;
+}
+.page-header h1{ font-family:var(--font-display); font-size:clamp(1.8rem,5vw,2.6rem); color:#fff; margin-bottom:6px; }
+.page-header p{ color:#c8caf0; }
+
+.sim-stage{
+  position:relative; width:100%; height:calc(100vh - 40px);
+}
+#simCanvas{
+  display:block; width:100%; height:100%; touch-action:none; cursor:grab;
+}
+#simCanvas:active{ cursor:grabbing; }
+
+.sim-controls{
+  position:fixed; bottom:24px; right:0%; transform:translateX(-50%);
+  display:flex; align-items:center; gap:10px;
+  background:rgba(15,18,50,.75); backdrop-filter:blur(8px);
+  border:2px solid rgba(255,255,255,.12);
+  padding:12px 18px; border-radius:60px; z-index:20;
+  box-shadow:0 12px 30px rgba(0,0,0,.4);
+}
+.ctrl-btn{
+  width:42px; height:42px; border-radius:50%;
+  background:linear-gradient(160deg,#ffe08a,var(--sun-gold));
+  color:#5c2b00; font-weight:800; font-size:1.1rem;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 0 #c9832a;
+  transition:transform .15s ease;
+}
+.ctrl-btn:hover{ transform:translateY(-2px); }
+.ctrl-btn:active{ transform:translateY(2px); box-shadow:0 1px 0 #c9832a; }
+.ctrl-divider{ width:2px; height:26px; background:rgba(255,255,255,.15); margin:0 4px; }
+.ctrl-label{ font-family:var(--font-display); color:#fff; font-size:.9rem; min-width:44px; text-align:center; }
+.speed-label{ font-family:var(--font-display); color:#c8caf0; font-size:.82rem; margin-left:4px; }
+#speedRange{ width:100px; accent-color:var(--sun-gold); }
+
+.sim-popup{ text-align:center; max-width:340px; padding-bottom:40px; }
+.popup-dot{
+  width:70px; height:70px; border-radius:50%; margin:0 auto 14px;
+  box-shadow:inset -10px -8px 0 rgba(0,0,0,.25);
+}
+.popup-tagline{ color:var(--mint); font-weight:600; margin-bottom:14px; }
+.popup-stats{
+  display:grid; grid-template-columns:1fr 1fr; gap:8px; text-align:left; margin-bottom:30px;
+}
+.popup-stats div{ background:rgba(255,255,255,.06); border-radius:10px; padding:8px 10px; font-size:.82rem; }
+.popup-stats b{ display:block; color:#fff; font-size:.92rem; }
+
+@media (max-width:640px){
+  .sim-controls{ flex-wrap:wrap; justify-content:center; max-width:92vw; }
+  #speedRange{ width:80px; }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Venus sering dijuluki sebagai bintang apa?",
+    "options": [
+      "Bintang Utara",
+      "Bintang Kejora",
+      "Bintang Jatuh",
+      "Bintang Kutub"
+    ],
+    "answer": 1,
+    "explanation": "Venus disebut Bintang Kejora karena tampak sangat terang di langit senja dan pagi."
+  },
+  {
+    "id": 2,
+    "question": "Apa yang membuat Venus menjadi planet terpanas di Tata Surya?",
+    "options": [
+      "Jaraknya paling dekat Matahari",
+      "Efek rumah kaca dari awan tebal",
+      "Terbuat dari api",
+      "Ukurannya sangat besar"
+    ],
+    "answer": 1,
+    "explanation": "Awan tebal karbon dioksida di Venus menjebak panas, membuatnya lebih panas dari Merkurius."
+  },
+  {
+    "id": 3,
+    "question": "Bagaimana arah rotasi Venus dibanding kebanyakan planet lain?",
+    "options": [
+      "Sama saja",
+      "Berputar terbalik",
+      "Tidak berputar",
+      "Berputar sangat cepat"
+    ],
+    "answer": 1,
+    "explanation": "Venus berputar terbalik (retrograde) dibanding kebanyakan planet lain di Tata Surya."
+  },
+  {
+    "id": 4,
+    "question": "Berapa jumlah satelit alami yang dimiliki Venus?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Venus tidak memiliki satelit alami sama sekali, sama seperti Merkurius."
+  },
+  {
+    "id": 5,
+    "question": "Manakah yang benar tentang sehari dan setahun di Venus?",
+    "options": [
+      "Setahun lebih lama dari sehari",
+      "Sehari lebih lama dari setahun",
+      "Sama panjang",
+      "Venus tidak punya hari"
+    ],
+    "answer": 1,
+    "explanation": "Uniknya, satu hari di Venus (243 hari Bumi) lebih lama dari satu tahunnya (225 hari Bumi)!"
+  },
+  {
+    "id": 6,
+    "question": "Gas apa yang paling banyak menyelimuti atmosfer Venus?",
+    "options": [
+      "Oksigen",
+      "Nitrogen",
+      "Karbon dioksida",
+      "Metana"
+    ],
+    "answer": 2,
+    "explanation": "Atmosfer Venus didominasi oleh gas karbon dioksida yang tebal."
+  },
+  {
+    "id": 7,
+    "question": "Berapa perkiraan suhu permukaan Venus?",
+    "options": [
+      "Sekitar 100°C",
+      "Sekitar 470°C",
+      "Sekitar 20°C",
+      "Sekitar -50°C"
+    ],
+    "answer": 1,
+    "explanation": "Suhu permukaan Venus bisa mencapai sekitar 470°C, terpanas di Tata Surya."
+  },
+  {
+    "id": 8,
+    "question": "Venus adalah planet urutan keberapa dari Matahari?",
+    "options": [
+      "Pertama",
+      "Kedua",
+      "Ketiga",
+      "Keempat"
+    ],
+    "answer": 1,
+    "explanation": "Venus berada di urutan kedua dari Matahari, setelah Merkurius."
+  },
+  {
+    "id": 9,
+    "question": "Apa bahaya yang terkandung dalam awan Venus?",
+    "options": [
+      "Air murni",
+      "Asam berbahaya",
+      "Debu emas",
+      "Salju"
+    ],
+    "answer": 1,
+    "explanation": "Awan Venus mengandung asam sulfat yang sangat berbahaya bagi makhluk hidup."
+  },
+  {
+    "id": 10,
+    "question": "Berapa jarak rata-rata Venus dari Matahari?",
+    "options": [
+      "58 juta km",
+      "108 juta km",
+      "150 juta km",
+      "228 juta km"
+    ],
+    "answer": 1,
+    "explanation": "Venus berjarak sekitar 108 juta km dari Matahari."
+  }
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petualangan Tata Surya</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  </head>
+<body>
+  <canvas id="sky-canvas"></canvas>
+
+  <div class="topbar">
+    <div class="topbar-group">
+      <button class="icon-btn" id="btnInfo" title="Informasi" data-sfx="click">i</button>
+    </div>
+    <div class="topbar-group">
+      <button class="icon-btn" id="btnSound" title="Suara" data-sfx="click">🔊</button>
+    </div>
+  </div>
+
+  <!-- planet doodles floating in background -->
+  <div class="doodle doodle-1" aria-hidden="true"></div>
+  <div class="doodle doodle-2" aria-hidden="true"></div>
+  <div class="doodle doodle-3" aria-hidden="true"></div>
+  <div class="doodle rocket" aria-hidden="true">🚀</div>
+
+  <main class="hero" id="heroSection">
+    <p class="eyebrow fade-up">Selamat datang para penjelajah tata surya!</p>
+    <h1 class="hero-title">
+      <span class="line1">Petualangan</span>
+      <span class="line2">Tata Surya</span>
+    </h1>
+    <p class="hero-sub fade-up">Yuk jelajahi matahari, planet, dan rahasia luar angkasa</p>
+
+    <a href="pages/menu.html" class="start-btn clickable">
+          <div class="start-glow"></div>
+          <span>MULAI</span>
+          <span class="start-icon">▶</span>
+      </a>
+  </main>
+
+  <!-- Modal Informasi -->
+  <div class="modal-backdrop" id="infoModal">
+    <div class="modal-card">
+      <button class="modal-close-x" id="closeInfo" data-sfx="click">✕</button>
+      <h2>👋 Halo, Penjelajah!</h2>
+      <p><strong>Petualangan Tata Surya</strong> adalah website belajar interaktif untuk teman-teman SD supaya makin kenal dengan Matahari, planet-planet, dan benda langit lainnya.</p>
+      <p><strong>Cara pakai:</strong></p>
+      <ul>
+        <li>Tekan tombol <strong>MULAI</strong> untuk membuka menu petualangan.</li>
+        <li><strong>Materi</strong>: baca &amp; putar-putar planet 360°.</li>
+        <li><strong>Simulasi</strong>: lihat animasi orbit tata surya, klik planetnya!</li>
+        <li><strong>Kuis</strong>: jawab soal dan dapatkan bintang sebanyak-banyaknya.</li>
+      </ul>
+      <p><strong>Tujuan belajar:</strong> mengenal nama planet, urutan dari Matahari, ciri-ciri, serta fakta unik tata surya dengan cara yang seru.</p>
+      <a class="btn-pill" href="pages/information.html" data-sfx="click" style="display:inline-block; margin-top:6px;">Baca selengkapnya →</a>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script src="js/animation.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

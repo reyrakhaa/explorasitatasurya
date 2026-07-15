@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Petualangan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <!-- planet doodles floating in background -->
+    <div class="doodle doodle-1" aria-hidden="true"></div>
+    <div class="doodle doodle-2" aria-hidden="true"></div>
+    <div class="doodle doodle-3" aria-hidden="true"></div>
+    <div class="doodle rocket" aria-hidden="true">🚀</div>
+    <div class="topbar">
+        <a class="icon-btn" href="../index.html">←</a>
+        <div class="topbar-group">
+            <button class="icon-btn" id="btnSound">🔊</button>
+        </div>
+    </div>
+    <canvas id="sky-canvas"></canvas>
+    <section class="menu-section reveal" id="menuSection">
+        <h2 class="menu-title">Pilih Petualanganmu</h2>
+        <div class="menu-path" id="menuPath">
+            <a class="menu-card" href="..//pages/material.html" data-sfx="click" style="--delay:0">
+            <div class="menu-planet planet-materi"></div>
+            <h3>Materi</h3>
+            <p>Kenali matahari &amp; semua planet</p>
+            <span class="menu-tag">Belajar</span>
+            </a>
+            <a class="menu-card" href="../pages/simulation.html" data-sfx="click" style="--delay:1">
+            <div class="menu-planet planet-simulasi"></div>
+            <h3>Simulasi</h3>
+            <p>Lihat planet mengorbit matahari</p>
+            <span class="menu-tag">Eksplor</span>
+            </a>
+            <a class="menu-card" href="../pages/quiz.html" data-sfx="click" style="--delay:2">
+            <div class="menu-planet planet-kuis"></div>
+            <h3>Kuis</h3>
+            <p>Uji pengetahuanmu tentang tata surya</p>
+            <span class="menu-tag">Tantangan</span>
+            </a>
+        </div>
+    </section>
+    <script src="../js/animation.js"></script>
+    <script src="../js/audio.js"></script>
+    <script src="../js/question.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

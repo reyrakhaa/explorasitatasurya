@@ -1,0 +1,158 @@
+body{
+  /* Ganti file di assets/background/space-bg.jpg dengan gambarmu sendiri.
+     Selama file belum ada, background-color di bawah jadi fallback (tanpa gradient/vignette). */
+  /* background:
+    url('../assets/background/space-bg.png') center/cover no-repeat fixed,
+    #070a22; */
+  min-height:100vh;
+}
+
+.doodle{position:fixed; z-index:1; opacity:.9; pointer-events:none;}
+.doodle-1{
+  top:6%; left:6%; width:120px; height:120px;
+  background: url('../assets/planet/bumi-cartoon.png') center/cover no-repeat;
+  animation:floaty 7s ease-in-out infinite;
+}
+.doodle-2{
+  bottom:10%; left:4%; width:90px; height:90px;
+  background: url('../assets/planet/mars-cartoon.png') center/cover no-repeat;
+  animation:floaty 9s ease-in-out infinite 1s;
+}
+.doodle-3{
+  top:12%; right:8%; width:150px; height:150px;
+  background: url('../assets/planet/saturn-cartoon.png') center/cover no-repeat;
+  animation:floaty 8s ease-in-out infinite .5s;
+}
+.doodle-3::after{
+  content:''; position:absolute; inset:-20px; border-radius:50%;
+  border:6px solid rgba(217,164,65,.35); transform:rotate(-18deg) scaleY(.32);
+}
+.rocket{
+  bottom:8%; right:10%; font-size:3rem;
+  animation:floaty 4.5s ease-in-out infinite, spinSlow 30s linear infinite;
+  filter:drop-shadow(0 6px 10px rgba(0,0,0,.4));
+}
+
+.hero{
+  position:relative; z-index:5; min-height:100vh;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; padding:20px;
+}
+.eyebrow{
+  font-family:var(--font-display); color:var(--mint); letter-spacing:.06em;
+  font-size:1.05rem; margin-bottom:10px; font-weight:700;
+}
+.hero-title{
+  font-family:var(--font-display); font-weight:800;
+  font-size:clamp(2.6rem, 9vw, 5.6rem); line-height:1.02; margin-bottom:18px;
+}
+.hero-title .line1, .hero-title .line2{
+  display:block;
+  background:linear-gradient(180deg,#fff6d6,var(--sun-gold) 60%, var(--sun-orange));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  text-shadow:0 8px 30px rgba(255,140,40,.25);
+  animation:floaty 5s ease-in-out infinite;
+}
+.hero-title .line2{ animation-delay:.3s; }
+.hero-sub{
+  font-size:1.15rem; color:#c8caf0; max-width:520px; margin-bottom:44px;
+}
+
+.start-btn{
+  position:relative; font-family:var(--font-display); font-weight:800; font-size:1.4rem;
+  color:#5c2b00; padding:22px 54px; border-radius:60px;
+  background:linear-gradient(160deg,#ffe08a,var(--sun-gold) 55%,var(--sun-orange));
+  box-shadow:0 10px 0 #b34d16, 0 20px 40px rgba(255,110,30,.35);
+  display:inline-flex; align-items:center; gap:14px;
+  animation:floaty 3.4s ease-in-out infinite;
+  transition:transform .18s ease, box-shadow .18s ease;
+  overflow:visible;
+}
+.start-btn:hover{ transform:translateY(-6px) scale(1.04); }
+.start-btn:active{ transform:translateY(4px); box-shadow:0 4px 0 #b34d16; }
+.start-glow{
+    position:absolute;
+    left:-30px;
+    right:-30px;
+    bottom:-30px;
+    height:0px;
+
+    z-index:-1;
+    border-radius:70%;
+
+    background:
+    radial-gradient(
+        ellipse at center,
+        rgba(255,220,100,.8) 0%,
+        rgba(255,180,50,.5) 40%,
+        transparent 80%
+    );
+
+    filter:blur(15px);
+}
+.start-icon{ font-size:1.1rem; }
+
+.menu-section{
+  position:relative; z-index:5; min-height:100vh; padding:80px 24px;
+  display:none; flex-direction:column; align-items:center;
+}
+.menu-section.reveal{ display:flex; }
+.menu-title{
+  font-family:var(--font-display); font-size:clamp(1.8rem,5vw,2.6rem);
+  color:#fff; margin-bottom:56px; text-align:center;
+  animation:fadeUp .6s ease both;
+}
+
+.menu-path{
+  display:flex; flex-wrap:wrap; gap:40px; justify-content:center; max-width:1100px;
+  position:relative;
+}
+.menu-card{
+  width:280px; background:linear-gradient(165deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+  border:2px solid rgba(255,255,255,.12);
+  border-radius:var(--radius-lg);
+  padding:34px 26px 28px;
+  text-align:center;
+  backdrop-filter:blur(6px);
+  position:relative;
+  opacity:0; transform:translateY(40px) scale(.9);
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1), border-color .25s ease, background .25s ease;
+}
+.menu-section.reveal .menu-card{
+  animation:cardPop .65s cubic-bezier(.34,1.56,.64,1) forwards;
+  animation-delay:calc(var(--delay) * .15s);
+}
+@keyframes cardPop{
+  0%{ opacity:0; transform:translateY(50px) scale(.85); }
+  100%{ opacity:1; transform:translateY(0) scale(1); }
+}
+.menu-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  border-color:rgba(255,255,255,.35);
+  background:linear-gradient(165deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
+}
+.menu-planet{
+  width:96px; height:96px; border-radius:50%; margin:0 auto 20px;
+  animation:floaty 4s ease-in-out infinite;
+}
+.planet-materi{ background:url('../assets/icon/lamp.png') center/cover no-repeat; }
+.planet-simulasi{ background:url('../assets/icon/space.png') center/cover no-repeat; }
+.planet-kuis{ background:url('../assets/icon/quiz.png') center/cover no-repeat; }
+
+.menu-card h3{
+  font-family:var(--font-display); font-size:1.5rem; color:#fff; margin-bottom:8px;
+}
+.menu-card p{ color:#c8caf0; font-size:.95rem; margin-bottom:16px; }
+.menu-tag{
+  display:inline-block; font-family:var(--font-display); font-weight:700; font-size:.8rem;
+  padding:6px 18px; border-radius:50px; color:#5c2b00;
+  background:linear-gradient(160deg,#ffe08a,var(--sun-gold));
+}
+
+@media (max-width:640px){
+  .doodle-1, .doodle-3{ width:80px; height:80px; }
+  .doodle-2{ width:60px; height:60px; }
+  .rocket{ font-size:2.2rem; }
+  .start-btn{ padding:18px 40px; font-size:1.15rem; }
+  .menu-card{ width:100%; max-width:320px; }
+}

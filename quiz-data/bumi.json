@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Berapa persen permukaan Bumi yang tertutup air?",
+    "options": [
+      "Sekitar 30%",
+      "Sekitar 50%",
+      "Sekitar 71%",
+      "Sekitar 90%"
+    ],
+    "answer": 2,
+    "explanation": "Sekitar 71% permukaan Bumi tertutup oleh air, sisanya daratan."
+  },
+  {
+    "id": 2,
+    "question": "Apa nama satelit alami Bumi?",
+    "options": [
+      "Bulan",
+      "Titan",
+      "Europa",
+      "Phobos"
+    ],
+    "answer": 0,
+    "explanation": "Satelit alami Bumi bernama Bulan, dan hanya ada satu."
+  },
+  {
+    "id": 3,
+    "question": "Mengapa Bumi adalah satu-satunya planet yang diketahui memiliki kehidupan?",
+    "options": [
+      "Paling besar",
+      "Punya cincin indah",
+      "Punya air, udara, dan suhu yang pas",
+      "Paling dekat Matahari"
+    ],
+    "answer": 2,
+    "explanation": "Kombinasi air, udara (atmosfer), dan suhu yang sesuai membuat Bumi mendukung kehidupan."
+  },
+  {
+    "id": 4,
+    "question": "Berapa lama Bumi berputar pada porosnya (1 hari)?",
+    "options": [
+      "24 jam",
+      "12 jam",
+      "48 jam",
+      "365 hari"
+    ],
+    "answer": 0,
+    "explanation": "Bumi berputar pada porosnya selama 24 jam, itulah satu hari."
+  },
+  {
+    "id": 5,
+    "question": "Berapa lama Bumi mengelilingi Matahari (1 tahun)?",
+    "options": [
+      "88 hari",
+      "225 hari",
+      "365 hari",
+      "687 hari"
+    ],
+    "answer": 2,
+    "explanation": "Bumi membutuhkan waktu sekitar 365 hari untuk mengelilingi Matahari satu kali."
+  },
+  {
+    "id": 6,
+    "question": "Apa fungsi atmosfer bagi Bumi?",
+    "options": [
+      "Membuat Bumi lebih berat",
+      "Melindungi dari sinar berbahaya Matahari",
+      "Membuat Bumi berputar",
+      "Menambah gravitasi"
+    ],
+    "answer": 1,
+    "explanation": "Atmosfer melindungi kehidupan di Bumi dari radiasi berbahaya dan menjaga suhu tetap stabil."
+  },
+  {
+    "id": 7,
+    "question": "Bumi adalah planet urutan keberapa dari Matahari?",
+    "options": [
+      "Kedua",
+      "Ketiga",
+      "Keempat",
+      "Kelima"
+    ],
+    "answer": 1,
+    "explanation": "Bumi berada di urutan ketiga dari Matahari."
+  },
+  {
+    "id": 8,
+    "question": "Berapa jarak rata-rata Bumi dari Matahari?",
+    "options": [
+      "108 juta km",
+      "150 juta km",
+      "228 juta km",
+      "58 juta km"
+    ],
+    "answer": 1,
+    "explanation": "Jarak rata-rata Bumi ke Matahari adalah sekitar 150 juta km."
+  },
+  {
+    "id": 9,
+    "question": "Warna Bumi jika dilihat dari luar angkasa didominasi warna apa?",
+    "options": [
+      "Merah dan oranye",
+      "Biru dan hijau",
+      "Kuning pucat",
+      "Abu-abu"
+    ],
+    "answer": 1,
+    "explanation": "Bumi terlihat biru karena lautan dan hijau karena daratan yang subur."
+  },
+  {
+    "id": 10,
+    "question": "Berapa jumlah satelit alami yang dimiliki Bumi?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Bumi memiliki satu satelit alami, yaitu Bulan."
+  }
+]

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuis — Petualangan Tata Surya</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+<canvas id="sky-canvas"></canvas>
+
+<div class="topbar">
+  <a class="icon-btn"
+  href="../pages/menu.html"
+  title="Kembali"
+  data-sfx="click">←</a>
+    <div class="topbar-group">
+    
+      <button class="icon-btn"
+    id="btnReset"
+    title="Reset"
+    data-sfx="click">↺</button>
+
+    <button class="icon-btn"
+    id="btnSound"
+    title="Suara"
+    data-sfx="click">🔊</button>
+
+  </div>
+</div>
+
+<!-- ===== Pemilihan Planet ===== -->
+<section class="quiz-select" id="selectView">
+  <header class="page-header">
+    <h1 class="fade-up">Pilih Planet untuk Kuis</h1>
+    <p class="fade-up">Setiap planet punya 10 soal seru. Berapa bintang bisa kamu kumpulkan?</p>
+  </header>
+  <div class="planet-grid" id="planetGrid"></div>
+</section>
+
+<!-- ===== Layar Kuis ===== -->
+<section class="quiz-play" id="playView" hidden>
+  <div class="quiz-topbar">
+    <button class="btn-pill ghost" id="btnQuitQuiz" data-sfx="click">← Ganti Planet</button>
+    <div class="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="progress-text" id="progressText">Soal 1/10</span>
+    </div>
+    <div class="score-pill">⭐ <span id="scoreText">0</span></div>
+  </div>
+
+  <div class="quiz-card fade-up" id="quizCard">
+    <span class="quiz-planet-badge" id="quizPlanetBadge"></span>
+    <h2 class="question-text" id="questionText"></h2>
+    <div class="options" id="optionsWrap"></div>
+  </div>
+
+  <div class="feedback-panel" id="feedbackPanel" hidden>
+    <div class="feedback-head" id="feedbackHead"></div>
+    <p class="feedback-explain" id="feedbackExplain"></p>
+    <button class="btn-pill" id="btnNext" data-sfx="click">Lanjut →</button>
+  </div>
+</section>
+
+<!-- ===== Hasil Akhir ===== -->
+<div class="modal-backdrop" id="resultModal">
+    <div class="modal-card result-card">
+        <div class="result-emoji" id="resultEmoji">🌟</div>
+        <h2 id="resultTitle">Hebat!</h2>
+        <p id="resultDesc"> Kamu menjawab benar 8 dari 10 soal.
+        </p>
+        <div class="result-stars" id="resultStars"></div>
+        <div class="result-actions">
+            <button class="btn-pill" id="btnRetry"data-sfx="click">Ulangi Kuis</button>
+            <button class="btn-pill ghost" id="btnChooseAnother" data-sfx="click">Pilih Planet Lain</button>
+        </div>
+    </div>
+</div>
+ 
+<!-- ===== Reset Progress ===== -->
+<div class="modal-backdrop" id="resetModal">
+    <div class="modal-card">
+        <h2>Reset Progres Kuis</h2>
+        <p>
+            Seluruh skor terbaik yang telah
+            kamu kumpulkan akan dihapus.
+        </p>
+        <div class="reset-actions">
+            <button class="btn-pill ghost" id="btnCancelReset" data-sfx="click">Batal</button>
+            <button class="btn-pill" id="btnConfirmReset" data-sfx="click">Reset</button>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="../js/animation.js"></script>
+<script src="../js/audio.js"></script>
+<script src="../js/question.js"></script>
+<script src="../js/quiz.js"></script>
+</body>
+</html>

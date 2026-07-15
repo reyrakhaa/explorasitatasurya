@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Apa ciri khas paling terkenal dari Saturnus?",
+    "options": [
+      "Warnanya merah",
+      "Cincinnya yang megah",
+      "Ukurannya kecil",
+      "Tidak punya satelit"
+    ],
+    "answer": 1,
+    "explanation": "Saturnus sangat terkenal karena cincin indahnya yang mengelilingi planet."
+  },
+  {
+    "id": 2,
+    "question": "Cincin Saturnus terbuat dari apa?",
+    "options": [
+      "Awan tebal",
+      "Es dan batu",
+      "Logam cair",
+      "Gas beracun"
+    ],
+    "answer": 1,
+    "explanation": "Cincin Saturnus terbuat dari jutaan bongkahan es dan batu berbagai ukuran."
+  },
+  {
+    "id": 3,
+    "question": "Mengapa Saturnus disebut planet paling ringan?",
+    "options": [
+      "Karena kecil",
+      "Karena bisa mengapung di air jika ada kolam yang cukup besar",
+      "Karena terbuat dari kapas",
+      "Karena tidak punya gravitasi"
+    ],
+    "answer": 1,
+    "explanation": "Kepadatan Saturnus lebih ringan dari air, sehingga secara teori ia bisa mengapung."
+  },
+  {
+    "id": 4,
+    "question": "Kira-kira berapa banyak satelit yang dimiliki Saturnus?",
+    "options": [
+      "Sekitar 27",
+      "Lebih dari 140",
+      "Sekitar 16",
+      "Tidak ada"
+    ],
+    "answer": 1,
+    "explanation": "Saturnus memiliki lebih dari 140 satelit yang telah ditemukan."
+  },
+  {
+    "id": 5,
+    "question": "Berapa lama satu tahun di Saturnus?",
+    "options": [
+      "12 tahun Bumi",
+      "29 tahun Bumi",
+      "84 tahun Bumi",
+      "165 tahun Bumi"
+    ],
+    "answer": 1,
+    "explanation": "Saturnus membutuhkan sekitar 29 tahun Bumi untuk mengelilingi Matahari."
+  },
+  {
+    "id": 6,
+    "question": "Warna Saturnus didominasi oleh warna apa?",
+    "options": [
+      "Kuning pucat",
+      "Merah menyala",
+      "Hijau tua",
+      "Ungu"
+    ],
+    "answer": 0,
+    "explanation": "Awan amonia membuat Saturnus tampak berwarna kuning pucat."
+  },
+  {
+    "id": 7,
+    "question": "Saturnus adalah planet urutan keberapa dari Matahari?",
+    "options": [
+      "Kelima",
+      "Keenam",
+      "Ketujuh",
+      "Kedelapan"
+    ],
+    "answer": 1,
+    "explanation": "Saturnus berada di urutan keenam dari Matahari."
+  },
+  {
+    "id": 8,
+    "question": "Berapa lama satu hari di Saturnus?",
+    "options": [
+      "Sekitar 10,7 jam",
+      "Sekitar 24 jam",
+      "Sekitar 48 jam",
+      "Sekitar 5 jam"
+    ],
+    "answer": 0,
+    "explanation": "Saturnus berputar cukup cepat, satu harinya sekitar 10,7 jam."
+  },
+  {
+    "id": 9,
+    "question": "Berapa jarak rata-rata Saturnus dari Matahari?",
+    "options": [
+      "778 juta km",
+      "1,4 miliar km",
+      "2,9 miliar km",
+      "4,5 miliar km"
+    ],
+    "answer": 1,
+    "explanation": "Jarak rata-rata Saturnus dari Matahari adalah sekitar 1,4 miliar km."
+  },
+  {
+    "id": 10,
+    "question": "Saturnus termasuk planet apa berdasarkan bahan pembentuknya?",
+    "options": [
+      "Planet gas raksasa",
+      "Planet batu kecil",
+      "Planet es padat",
+      "Planet logam"
+    ],
+    "answer": 0,
+    "explanation": "Saturnus adalah planet gas raksasa, mirip dengan Jupiter namun lebih ringan."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Apa yang unik dari cara Uranus berputar?",
+    "options": [
+      "Berputar sangat lambat",
+      "Berputar menyamping seperti menggelinding",
+      "Tidak pernah berputar",
+      "Berputar terlalu cepat"
+    ],
+    "answer": 1,
+    "explanation": "Uranus miring sekitar 98 derajat sehingga tampak berputar menyamping seperti bola menggelinding."
+  },
+  {
+    "id": 2,
+    "question": "Apa yang menyebabkan warna biru kehijauan pada Uranus?",
+    "options": [
+      "Gas metana",
+      "Air laut",
+      "Pasir biru",
+      "Cahaya Matahari"
+    ],
+    "answer": 0,
+    "explanation": "Gas metana di atmosfer Uranus menyerap warna merah dan memantulkan warna biru kehijauan."
+  },
+  {
+    "id": 3,
+    "question": "Berapa lama satu tahun di Uranus?",
+    "options": [
+      "29 tahun Bumi",
+      "84 tahun Bumi",
+      "165 tahun Bumi",
+      "12 tahun Bumi"
+    ],
+    "answer": 1,
+    "explanation": "Uranus membutuhkan waktu 84 tahun Bumi untuk mengelilingi Matahari satu kali."
+  },
+  {
+    "id": 4,
+    "question": "Apakah Uranus memiliki cincin?",
+    "options": [
+      "Tidak sama sekali",
+      "Ya, cincin tipis",
+      "Ya, cincin sangat tebal seperti Saturnus",
+      "Hanya debu biasa"
+    ],
+    "answer": 1,
+    "explanation": "Uranus memiliki cincin tipis yang sulit terlihat dari Bumi tanpa teleskop khusus."
+  },
+  {
+    "id": 5,
+    "question": "Kira-kira berapa banyak satelit yang dimiliki Uranus?",
+    "options": [
+      "Sekitar 27",
+      "Sekitar 95",
+      "Sekitar 146",
+      "Tidak ada"
+    ],
+    "answer": 0,
+    "explanation": "Uranus memiliki sekitar 27 satelit yang telah diketahui."
+  },
+  {
+    "id": 6,
+    "question": "Uranus adalah planet urutan keberapa dari Matahari?",
+    "options": [
+      "Keenam",
+      "Ketujuh",
+      "Kedelapan",
+      "Kelima"
+    ],
+    "answer": 1,
+    "explanation": "Uranus berada di urutan ketujuh dari Matahari."
+  },
+  {
+    "id": 7,
+    "question": "Berapa lama satu hari di Uranus?",
+    "options": [
+      "Sekitar 17 jam",
+      "Sekitar 24 jam",
+      "Sekitar 10 jam",
+      "Sekitar 48 jam"
+    ],
+    "answer": 0,
+    "explanation": "Satu hari di Uranus berlangsung sekitar 17 jam."
+  },
+  {
+    "id": 8,
+    "question": "Uranus termasuk jenis planet apa?",
+    "options": [
+      "Planet batu",
+      "Planet es raksasa",
+      "Planet gas panas",
+      "Planet logam"
+    ],
+    "answer": 1,
+    "explanation": "Uranus disebut planet es raksasa karena banyak mengandung es air, metana, dan amonia."
+  },
+  {
+    "id": 9,
+    "question": "Berapa jarak rata-rata Uranus dari Matahari?",
+    "options": [
+      "1,4 miliar km",
+      "2,9 miliar km",
+      "4,5 miliar km",
+      "778 juta km"
+    ],
+    "answer": 1,
+    "explanation": "Jarak rata-rata Uranus dari Matahari adalah sekitar 2,9 miliar km."
+  },
+  {
+    "id": 10,
+    "question": "Berapa derajat kemiringan poros rotasi Uranus?",
+    "options": [
+      "Sekitar 23 derajat",
+      "Sekitar 98 derajat",
+      "Sekitar 0 derajat",
+      "Sekitar 180 derajat"
+    ],
+    "answer": 1,
+    "explanation": "Poros Uranus miring sekitar 98 derajat, sangat unik dibanding planet lain."
+  }
+]

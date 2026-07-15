@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulasi — Petualangan Tata Surya</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/simulation.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="icon-btn" href="../pages/menu.html" title="Kembali" data-sfx="click">←</a>
+  <div class="topbar-group">
+    <button class="icon-btn" id="btnSound" title="Suara" data-sfx="click">🔊</button>
+  </div>
+</div>
+
+<header class="page-header">
+  <h1 class="fade-up">Simulasi Tata Surya</h1>
+  <p class="fade-up">Klik planetnya untuk info singkat!</p>
+</header>
+
+<main class="sim-stage">
+  <canvas id="simCanvas"></canvas>
+
+  <div class="sim-controls fade-up">
+    <button class="ctrl-btn" id="btnPlayPause" data-sfx="click" title="Play/Pause">⏸</button>
+    <button class="ctrl-btn" id="btnReset" data-sfx="click" title="Reset">↺</button>
+    <div class="ctrl-divider"></div>
+    <button class="ctrl-btn" id="btnZoomOut" data-sfx="click" title="Zoom Out">−</button>
+    <span class="ctrl-label" id="zoomLabel">100%</span>
+    <button class="ctrl-btn" id="btnZoomIn" data-sfx="click" title="Zoom In">+</button>
+    <div class="ctrl-divider"></div>
+    <label class="speed-label" for="speedRange">Kecepatan</label>
+    <input type="range" id="speedRange" min="0.2" max="4" value="1" step="0.2">
+  </div>
+</main>
+
+<!-- Popup info planet -->
+<div class="modal-backdrop" id="planetModal">
+  <div class="modal-card sim-popup">
+    <button class="modal-close-x" id="closePlanetModal" data-sfx="click">✕</button>
+    <div class="popup-dot" id="popupDot"></div>
+    <h2 id="popupName">Bumi</h2>
+    <p id="popupTagline" class="popup-tagline"></p>
+    <div class="popup-stats" id="popupStats"></div>
+    <a href="material.html" class="btn-pill" id="popupMore" data-sfx="click">Pelajari lebih lanjut →</a>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="../js/audio.js"></script>
+<script src="../js/question.js"></script>
+<script src="../js/simulation.js"></script>
+</body>
+</html>

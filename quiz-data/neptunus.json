@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Neptunus dikenal sebagai planet apa di Tata Surya?",
+    "options": [
+      "Terdekat dengan Matahari",
+      "Terjauh dari Matahari",
+      "Terkecil",
+      "Terpanas"
+    ],
+    "answer": 1,
+    "explanation": "Neptunus adalah planet paling jauh dari Matahari di Tata Surya kita."
+  },
+  {
+    "id": 2,
+    "question": "Apa keunikan angin di Neptunus?",
+    "options": [
+      "Anginnya paling lambat",
+      "Anginnya paling kencang di Tata Surya",
+      "Tidak ada angin sama sekali",
+      "Anginnya hanya bertiup di siang hari"
+    ],
+    "answer": 1,
+    "explanation": "Angin di Neptunus bisa mencapai 2.100 km/jam, tercepat di seluruh Tata Surya."
+  },
+  {
+    "id": 3,
+    "question": "Berapa lama satu tahun di Neptunus?",
+    "options": [
+      "84 tahun Bumi",
+      "165 tahun Bumi",
+      "225 tahun Bumi",
+      "12 tahun Bumi"
+    ],
+    "answer": 1,
+    "explanation": "Neptunus membutuhkan waktu 165 tahun Bumi untuk mengelilingi Matahari satu kali."
+  },
+  {
+    "id": 4,
+    "question": "Bagaimana cara Neptunus pertama kali ditemukan?",
+    "options": [
+      "Dilihat langsung dengan mata telanjang",
+      "Dihitung lewat matematika sebelum terlihat teleskop",
+      "Ditemukan oleh astronot",
+      "Ditemukan secara kebetulan"
+    ],
+    "answer": 1,
+    "explanation": "Neptunus ditemukan berkat perhitungan matematika para ilmuwan sebelum benar-benar diamati lewat teleskop."
+  },
+  {
+    "id": 5,
+    "question": "Apa yang menyebabkan warna biru tua pada Neptunus?",
+    "options": [
+      "Air laut",
+      "Gas metana",
+      "Es kering",
+      "Pasir biru"
+    ],
+    "answer": 1,
+    "explanation": "Gas metana di atmosfer Neptunus membuatnya tampak berwarna biru tua yang indah."
+  },
+  {
+    "id": 6,
+    "question": "Kira-kira berapa banyak satelit yang dimiliki Neptunus?",
+    "options": [
+      "Sekitar 16",
+      "Sekitar 95",
+      "Sekitar 146",
+      "Tidak ada"
+    ],
+    "answer": 0,
+    "explanation": "Neptunus memiliki sekitar 16 satelit yang telah diketahui."
+  },
+  {
+    "id": 7,
+    "question": "Neptunus adalah planet urutan keberapa dari Matahari?",
+    "options": [
+      "Ketujuh",
+      "Kedelapan",
+      "Kesembilan",
+      "Keenam"
+    ],
+    "answer": 1,
+    "explanation": "Neptunus berada di urutan kedelapan (terakhir) dari Matahari."
+  },
+  {
+    "id": 8,
+    "question": "Berapa lama satu hari di Neptunus?",
+    "options": [
+      "Sekitar 16 jam",
+      "Sekitar 24 jam",
+      "Sekitar 48 jam",
+      "Sekitar 10 jam"
+    ],
+    "answer": 0,
+    "explanation": "Satu hari di Neptunus berlangsung sekitar 16 jam."
+  },
+  {
+    "id": 9,
+    "question": "Berapa jarak rata-rata Neptunus dari Matahari?",
+    "options": [
+      "2,9 miliar km",
+      "4,5 miliar km",
+      "1,4 miliar km",
+      "778 juta km"
+    ],
+    "answer": 1,
+    "explanation": "Jarak rata-rata Neptunus dari Matahari adalah sekitar 4,5 miliar km."
+  },
+  {
+    "id": 10,
+    "question": "Neptunus termasuk jenis planet apa?",
+    "options": [
+      "Planet batu kecil",
+      "Planet es raksasa",
+      "Planet gas panas",
+      "Planet logam padat"
+    ],
+    "answer": 1,
+    "explanation": "Sama seperti Uranus, Neptunus termasuk planet es raksasa."
+  }
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materi — Petualangan Tata Surya</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/material.css">
+</head>
+<body>
+<canvas id="sky-canvas"></canvas>
+
+<div class="topbar">
+  <a class="icon-btn" href="../pages/menu.html" title="Kembali" data-sfx="click">←</a>
+  <div class="topbar-group">
+    <button class="icon-btn" id="btnSound" title="Suara" data-sfx="click">🔊</button>
+  </div>
+</div>
+
+<header class="page-header">
+  <h1 class="fade-up">Materi Tata Surya</h1>
+  <p class="fade-up">Pilih Matahari atau planet, lalu putar untuk melihat semua sisinya!</p>
+</header>
+
+<div class="planet-picker" id="planetPicker"></div>
+
+<main class="material-stage" id="materialStage">
+  <div class="viewer-wrap">
+    <canvas id="planetCanvas" width="360" height="360"></canvas>
+    <p class="drag-hint">👆 Geser / seret untuk memutar</p>
+  </div>
+
+  <div class="info-panel fade-up" id="infoPanel">
+    <span class="tag" id="infoTag">Planet</span>
+    <h2 id="infoName">Bumi</h2>
+    <p class="tagline" id="infoTagline"></p>
+    <p class="desc" id="infoDesc"></p>
+
+    <div class="stat-grid" id="statGrid"></div>
+
+    <h3>Fakta Unik ✨</h3>
+    <ul class="facts" id="infoFacts"></ul>
+  </div>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="../js/animation.js"></script>
+<script src="../js/audio.js"></script>
+<script src="../js/question.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="../js/material.js"></script>
+</body>
+</html>

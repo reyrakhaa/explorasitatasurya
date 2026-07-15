@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informasi — Petualangan Tata Surya</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  body{ background:linear-gradient(180deg,#0b0f2e,#070a22); min-height:100vh; }
+  .info-page{ position:relative; z-index:5; max-width:760px; margin:0 auto; padding:110px 24px 60px; }
+  .info-page h1{ font-family:var(--font-display); color:#fff; font-size:2rem; margin-bottom:20px; }
+  .info-page h2{ font-family:var(--font-display); color:var(--sun-gold); font-size:1.25rem; margin:28px 0 12px; }
+  .info-page p, .info-page li{ color:#d6d8f5; line-height:1.7; margin-bottom:10px; }
+  .info-page ul{ padding-left:22px; }
+  .card{ background:rgba(255,255,255,.06); border:2px solid rgba(255,255,255,.1); border-radius:var(--radius-lg); padding:28px; margin-top:20px; }
+</style>
+</head>
+<body>
+<canvas id="sky-canvas"></canvas>
+<div class="topbar">
+  <a class="icon-btn" href="../index.html" title="Kembali" data-sfx="click">←</a>
+</div>
+
+<main class="info-page fade-up">
+  <h1>ℹ️ Tentang &amp; Petunjuk Penggunaan</h1>
+  <div class="card">
+    <p><strong>Petualangan Tata Surya</strong> adalah media pembelajaran interaktif untuk siswa Sekolah Dasar agar lebih mudah dan senang mempelajari Matahari, planet, satelit, dan benda langit lainnya.</p>
+
+    <h2>🎯 Tujuan Pembelajaran</h2>
+    <ul>
+      <li>Mengenal nama dan urutan planet dari Matahari.</li>
+      <li>Memahami ciri-ciri, ukuran, dan jarak setiap planet.</li>
+      <li>Mengetahui waktu rotasi dan revolusi planet.</li>
+      <li>Mengenal fakta-fakta unik tata surya dengan cara yang menyenangkan.</li>
+    </ul>
+
+    <h2>🧭 Cara Menggunakan</h2>
+    <ul>
+      <li><strong>Materi:</strong> pilih planet dari daftar, lalu seret gambar planet untuk memutarnya 360°. Baca info di sampingnya.</li>
+      <li><strong>Simulasi:</strong> lihat animasi seluruh tata surya. Gunakan tombol play/pause, reset, zoom, dan slider kecepatan. Klik planet untuk info singkat.</li>
+      <li><strong>Kuis:</strong> pilih satu planet, jawab 10 soal pilihan ganda. Jawaban salah akan disertai penjelasan supaya kamu tetap belajar.</li>
+    </ul>
+
+    <h2>🔊 Suara</h2>
+    <p>Gunakan tombol speaker di pojok kanan atas untuk menyalakan atau mematikan musik latar dan efek suara kapan saja.</p>
+  </div>
+</main>
+
+<script src="../js/animation.js"></script>
+<script src="../js/audio.js"></script>
+<script>SpaceAudio.bindUISounds(document);</script>
+</body>
+</html>
