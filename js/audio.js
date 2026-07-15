@@ -64,7 +64,6 @@ const SpaceAudio = (function () {
   }
 
   function startMusic() {
-
     if(!bgMusic)
     bgMusic = new Audio("/assets/sound/backsound.mp3");
     bgMusic.loop = true;

@@ -36,6 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const sizeMap = { merkurius:7, venus:10, bumi:10.5, mars:8.5, jupiter:20, saturnus:18, uranus:13, neptunus:13 };
   bodies.forEach(b => b.size = sizeMap[b.data.id] || 10);
 
+  // kecepatan rotasi planet pada porosnya sendiri (schematic, bukan skala nyata).
+  // Venus bernilai negatif karena arah rotasinya terbalik dibanding planet lain.
+  const spinSpeedMap = { merkurius:0.010, venus:-0.007, bumi:0.05, mars:0.048, jupiter:0.09, saturnus:0.085, uranus:0.07, neptunus:0.065 };
+  bodies.forEach(b => b.spinSpeed = spinSpeedMap[b.data.id] || 0.03);
+
+  // Bulan — satelit alami Bumi, mengorbit planet Bumi
+  const moon = {
+    angle: Math.random() * Math.PI * 2,
+    speed: 0.05,   // relatif terhadap Bumi
+    orbitR: 20,    // jarak orbit dari Bumi (schematic, sebelum dikalikan dpr/zoom)
+    size: 3.2
+  };
+
   // ---------- load real planet images (assets/planet/<id>.jpg) ----------
   // Falls back to the color gradient automatically if the file is missing.
   function loadImage(src) {
@@ -124,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function drawPlanets(dt) {
     bodies.forEach(b => {
       if (playing) b.angle += b.speed * speed * dt * 0.06;
+      if (playing) b.spin += b.spinSpeed * speed * dt * 0.06; // rotasi planet pada porosnya
       const R = b.orbitR * dpr * zoom;
       const x = cx + Math.cos(b.angle) * R;
       const y = cy + Math.sin(b.angle) * R * 0.94; // slight ellipse for depth feel
@@ -131,8 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (b.tex.loaded) {
         ctx.save();
-        ctx.beginPath(); ctx.arc(x, y, b.screenR, 0, Math.PI * 2); ctx.clip();
-        ctx.drawImage(b.tex.img, x - b.screenR, y - b.screenR, b.screenR * 2, b.screenR * 2);
+        ctx.translate(x, y);
+        ctx.rotate(b.spin);
+        ctx.beginPath(); ctx.arc(0, 0, b.screenR, 0, Math.PI * 2); ctx.clip();
+        ctx.drawImage(b.tex.img, -b.screenR, -b.screenR, b.screenR * 2, b.screenR * 2);
         ctx.restore();
       } else {
         const grad = ctx.createRadialGradient(x - b.screenR * 0.35, y - b.screenR * 0.35, b.screenR * 0.1, x, y, b.screenR);
@@ -153,6 +169,39 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.lineWidth = 3.5 * dpr * zoom;
         ctx.stroke();
         ctx.restore();
+      }
+
+      // Bulan — mengorbit Bumi
+      if (b.data.id === 'bumi') {
+        if (playing) moon.angle += moon.speed * speed * dt * 0.06;
+        const moonR = moon.orbitR * dpr * zoom;
+        const mx = x + Math.cos(moon.angle) * moonR;
+        const my = y + Math.sin(moon.angle) * moonR * 0.94;
+        const moonSize = Math.max(1.6 * dpr, moon.size * dpr * zoom);
+
+        // garis orbit tipis supaya terlihat jelas mengelilingi Bumi
+        ctx.strokeStyle = 'rgba(255,255,255,0.18)';
+        ctx.lineWidth = 0.6 * dpr;
+        ctx.setLineDash([2 * dpr, 3 * dpr]);
+        ctx.beginPath();
+        ctx.ellipse(x, y, moonR, moonR * 0.94, 0, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        const moonGrad = ctx.createRadialGradient(mx - moonSize * 0.35, my - moonSize * 0.35, moonSize * 0.1, mx, my, moonSize);
+        moonGrad.addColorStop(0, '#f5f5f5');
+        moonGrad.addColorStop(1, '#9a9aa0');
+        ctx.fillStyle = moonGrad;
+        ctx.beginPath();
+        ctx.arc(mx, my, moonSize, 0, Math.PI * 2);
+        ctx.fill();
+
+        if (zoom > 1.3) {
+          ctx.font = `${9 * dpr}px Baloo 2, sans-serif`;
+          ctx.fillStyle = 'rgba(255,255,255,0.7)';
+          ctx.textAlign = 'center';
+          ctx.fillText('Bulan', mx, my + moonSize + 10 * dpr);
+        }
       }
 
       // label (fades in when zoomed enough)
@@ -184,7 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
   btnReset.addEventListener('click', () => {
     zoom = 1; speed = 1; speedRange.value = 1;
     zoomLabel.textContent = '100%';
-    bodies.forEach((b, i) => b.angle = (i / bodies.length) * Math.PI * 2);
+    bodies.forEach((b, i) => { b.angle = (i / bodies.length) * Math.PI * 2; b.spin = 0; });
+    moon.angle = 0;
     playing = true; btnPlayPause.textContent = '⏸';
     showToast('Simulasi direset');
   });
