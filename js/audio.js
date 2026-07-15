@@ -68,7 +68,7 @@ const SpaceAudio = (function () {
     if(!bgMusic)
     bgMusic = new Audio("/assets/sound/backsound.mp3");
     bgMusic.loop = true;
-    bgMusic.volume = 0.3;
+    bgMusic.volume = 0.2;
 
     if(!muted){
         bgMusic.play().catch(()=>{});
