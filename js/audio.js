@@ -9,7 +9,7 @@ const SpaceAudio = (function () {
   let ctx = null;
   let masterGain = null;
   let ambientNodes = [];
-  let muted = localStorage.getItem('sst_muted') === 'true';
+  let muted = localStorage.getItem('sst_muted') === 'false';
   let bgMusic = null;
 
   function ensureCtx() {
