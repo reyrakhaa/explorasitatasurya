@@ -108,6 +108,14 @@ a{color:inherit; text-decoration:none;}
   display:flex; align-items:center; justify-content:center;
 }
 .modal-card{position:relative;}
+.moon-decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
 
 /* ---------- floating & fade animations ---------- */
 @keyframes floaty{

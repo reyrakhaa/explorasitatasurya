@@ -2,7 +2,7 @@
   audio.js — Modul suara Petualangan Tata Surya
   Semua efek suara & backsound dibuat langsung dengan Web Audio API
   (osilator disintesis) supaya website tetap 100% berjalan tanpa
-  file audio eksternal & tanpa server/backend. File di assets/audio/
+  file audio eksternal & tanpa server/backend. File di assets/sound/
   disediakan sebagai placeholder jika ingin diganti dengan rekaman asli.
 */
 const SpaceAudio = (function () {
