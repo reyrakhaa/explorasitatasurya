@@ -9,7 +9,7 @@ const SpaceAudio = (function () {
   let ctx = null;
   let masterGain = null;
   let ambientNodes = [];
-  let muted = localStorage.getItem('sst_muted') === 'false';
+  let muted = localStorage.getItem('sst_muted') !== 'false';
   let bgMusic = null;
 
   function ensureCtx() {
@@ -67,7 +67,7 @@ const SpaceAudio = (function () {
     if(!bgMusic)
     bgMusic = new Audio("/assets/sound/backsound.mp3");
     bgMusic.loop = true;
-    bgMusic.volume = 0.2;
+    bgMusic.volume = 0.1;
 
     if(!muted){
         bgMusic.play().catch(()=>{});
