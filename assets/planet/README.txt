@@ -1,1 +1,0 @@
-Folder ini disediakan sesuai struktur proyek. Aset visual & audio saat ini dibuat langsung lewat kode (Canvas 2D untuk planet, Web Audio API untuk suara) sehingga tidak memerlukan file di folder ini. Anda bisa menambahkan file asli di sini (lalu menyambungkannya di js/) jika ingin menggantinya.
